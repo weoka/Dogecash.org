@@ -967,7 +967,7 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 	margin: 10px 0;
 }
 
-.simple-head .distri .dogecoin div{
+.distri .dogecoin div{
 	background:transparent;
     color:black;
 }
@@ -1020,14 +1020,7 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 .about-us-con .btn {
 	margin-right: 10px;
 }
-.distri .countdown h6 {
-	margin: 0px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	font-weight: 500;
-	border-bottom: 1px solid rgba(0,0,0,0.1);
-	padding-bottom: 10px;
-}
+
 .distri .countdown {
 	margin-top: 30px;
 	background: #fff;
