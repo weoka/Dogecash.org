@@ -1222,3 +1222,24 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 	font-size: 50px;
 	font-weight: 400;
 }
+
+/*=======================================================
+			Development Activity
+========================================================*/
+.dev-activ {
+}
+.dev-activ li i {
+	display: inline-block;
+	width: 100%;
+	color: #000;
+	font-size: 38px;
+}
+.dev-activ span {
+	font-size: 22px;
+	letter-spacing: -0.5px;
+	color: #000;
+	font-weight: 600;
+}
+.dev-activ .btn {
+	margin: 0 10px;
+}
