@@ -1243,3 +1243,94 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 .dev-activ .btn {
 	margin: 0 10px;
 }
+
+/*=======================================================
+			Prefooter
+========================================================*/
+.community-sec {
+	background: url(../images/com-bg.jpg) top center no-repeat;
+	background-size: cover;
+	z-index: 1;
+}
+.community-sec:before {
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	z-index: -1;
+	background: rgba(0,0,0,0.8);
+}
+.community-sec .socials {
+	margin-top: 10px;
+}
+.community-sec .socials li {
+	display: inline-block;
+}
+.community-sec .socials li a {
+	color: #fff;
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	margin: 0 2.5px;
+	text-align: center;
+	border-radius: 50%;
+	font-size: 16px;
+	line-height: 48px;
+	color: rgba(255,255,255,0.8);
+	border: 1px solid rgba(255,255,255,0.5);
+}
+.community-sec .socials li a:hover {
+	color: #fff;
+	border: 1px solid rgba(255,255,255,1);
+}
+.sm-intro {
+	position: relative;
+	z-index: 3;
+	color: #fff;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+.sm-intro p {
+	max-width: 800px;
+	margin: 0 auto;
+}
+.community-sec h2 {
+	color: #fff;
+	font-size: 26px;
+	margin-bottom: 20px;
+	display: inline-block;
+	width: 100%;
+}
+
+/*=======================================================
+			Footer
+========================================================*/
+footer {
+	background: #000;
+	padding: 50px 0;
+	padding-bottom: 0px;
+	z-index: 1;
+	position: relative;
+}
+footer p {
+	color: #999;
+	font-size: 12px;
+	font-weight: 500;
+}
+footer .rights a {
+	color: #999;
+	font-size: 12px;
+	font-weight: 500;
+	margin-left: 15px;
+}
+footer .rights {
+	border-top: 1px solid rgba(255,255,255,0.1);
+	padding-top: 15px;
+	background: rgba(0,0,0,0.1);
+}
+footer .rights a:hover {
+	color: #fff;
+}
+
