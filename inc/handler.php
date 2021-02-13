@@ -1,6 +1,6 @@
 <?php
 
-namespace inc;
+namespace Inc;
 
 if(!function_exists('start')) :
     header('Status: 403 Forbidden');
