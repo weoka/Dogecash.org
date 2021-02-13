@@ -61,3 +61,9 @@ Thumbs.db
 !mstile-*.png
 !safari-pinned-tab.svg
 !site.webmanifest
+
+#ignore config
+config.php
+
+#ignore vendor
+/vendor

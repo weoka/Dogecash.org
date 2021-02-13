@@ -1,3 +1,15 @@
+<?php
+
+require __DIR__ . '/vendor/autoload.php';
+
+function start()
+{
+    return new Inc\Handler();
+}
+$handler = start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +26,6 @@
     <link href="css/responsive.css" rel="stylesheet">
     <link href="fonts/flaticon.css" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-
 
     <!-- JavaScripts -->
     <script src="js/modernizr.js"></script>
@@ -53,7 +64,7 @@
                     <!-- Left Section -->
                     <div class="col-md-7">
                         <h1>The eco-friendly Doge cryptocurrency that will reach $1</h1>
-                        <a href="#valuable" class="btn">Learn more</a> <a href="#." class="btn btn-inverse">Buy now</a> </div>
+                        <a href="#valuable" class="btn">Learn more</a> <a href="https://stakecube.net/app/exchange/DOGEC_BTC" target="_blank" class="btn btn-inverse">Buy now</a> </div>
                     
                     <!-- Text Section -->
                     <div class="col-md-5">
@@ -61,13 +72,13 @@
                         <h6>Current DogeCash supply</h6>
                         <!-- Progress -->
                         <div class="progress dogecash">
-                            <div class="progress-bar" role="progressbar" style="width: 66%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><span>14,000,000 DOGEC<small>66%</small></span> </div>
+                            <div class="progress-bar" role="progressbar" style="width: <?php echo $handler->dogecData()['percentage_supply'] ?>%;" aria-valuenow="<?php echo $handler->dogecData()['percentage_supply'] ?>" aria-valuemin="0" aria-valuemax="100"><span><?php echo $handler->dogecData()['circulating_supply'] ?> DOGEC<small><?php echo $handler->dogecData()['percentage_supply'] ?>%</small></span> </div>
                         </div>
 
                         <h6>Current DogeCoin supply</h6>
                         <!-- Progress -->
                         <div class="progress dogecoin">
-                            <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><span>140,000,000,000 DOGE<small>∞</small></span> </div>
+                            <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><span><?php echo $handler->dogeData()['circulating_supply'] ?> DOGE<small>∞</small></span> </div>
                         </div>
                         </div>
                     </div>
@@ -144,17 +155,17 @@
                         
                         <!-- Progress -->
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="150"><span>14,000,000 DOGEC <small>66%</small></span> </div>
+                        <div class="progress-bar" role="progressbar" style="width: <?php echo $handler->dogecData()['percentage_supply'] ?>%;" aria-valuenow="<?php echo $handler->dogecData()['percentage_supply'] ?>" aria-valuemin="0" aria-valuemax="100"><span><?php echo $handler->dogecData()['circulating_supply'] ?> DOGEC<small><?php echo $handler->dogecData()['percentage_supply'] ?>%</small></span> </div>
                         </div>
                         <div class="row">
                             <div class="col">
-                            <h6> $0.05</h6>
+                            <h6> $<?php echo $handler->dogecData()['price'] ?></h6>
                             <span>Current price</span> </div>
                             <div class="col">
-                            <h6> $60,000</h6>
+                            <h6> $<?php echo $handler->dogecData()['volume'] ?></h6>
                             <span>Volume</span> </div>
                             <div class="col">
-                            <h6> $700,000</h6>
+                            <h6> $<?php echo $handler->dogecData()['market_cap'] ?></h6>
                             <span>Market cap</span> </div>
                         </div>
                         
@@ -163,17 +174,17 @@
                             <h6 class="padding-top-10">In the meanwhile, DogeCoin numbers...</h6>
                             <!-- Progress -->
                             <div class="progress dogecoin">
-                                <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><span>140,000,000,000 DOGE<small>∞</small></span> </div>
+                                <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><span><?php echo $handler->dogeData()['circulating_supply'] ?> DOGE<small>∞</small></span> </div>
                             </div>
                             <div class="row">
                                 <div class="col">
-                                <h6> $0.06</h6>
+                                <h6> $<?php echo $handler->dogeData()['price'] ?></h6>
                                 <span>Current price</span> </div>
                                 <div class="col">
-                                <h6> $60,000,000</h6>
+                                <h6> $<?php echo $handler->dogeData()['volume'] ?></h6>
                                 <span>Volume</span> </div>
                                 <div class="col">
-                                <h6> $7,000,000,000</h6>
+                                <h6> $<?php echo $handler->dogeData()['market_cap'] ?></h6>
                                 <span>Market cap</span> </div>
                             </div>
                         </div>
@@ -182,7 +193,7 @@
                         <!-- Total Distribution -->
                         <div class="col-lg-5">
                         <h3>DogeCash will reach $1</h3>
-                        <p>It's a matter of time. Having in mind the growth of the last 3 months, DogeCash will reach $1 in:</p>
+                        <p>It's a matter of time. Considering the growth of the last 7 days, DogeCash will reach $1 in:</p>
                         <div class="countdown-all">                                 
                             <ul class="row">
                             <!-- Days -->
@@ -210,7 +221,7 @@
                                 </article>
                             </li>
                             </ul>
-                            <a href="#." class="btn">Say hello</a> <a href="#." class="btn btn-inverse">Buy Now</a> 
+                            <a href="https://discord.gg/U8wfSKJkUa" target="_blank" class="btn">Say hello</a> <a href="https://stakecube.net/app/exchange/DOGEC_BTC" target="_blank" class="btn btn-inverse">Buy Now</a> 
                             
                         </div>
                         </div>
@@ -233,7 +244,7 @@
                                 <p>Masternodes</p>
                             </li>
                             </ul>
-                            <a href="#." class="btn">White Paper</a> <a href="https://www.dogec.io/whitepaper.pdf" target="_blank" class="btn btn-inverse">Buy your masternode</a> </div>
+                            <a href="https://www.dogec.io/whitepaper.pdf" target="_blank" class="btn">White Paper</a> <a href="https://stakecube.net/app/exchange/DOGEC_BTC" target="_blank" class="btn btn-inverse">Buy your masternode</a> </div>
                         </div>
                     </div>
                 </section>
@@ -259,7 +270,7 @@
                         <p>Team Members</p>
                         </li>
                     </ul>
-                    <a href="#." class="btn">Say hello</a> <a href="#." class="btn btn-inverse">Github</a> </div>
+                    <a href="https://discord.gg/U8wfSKJkUa" target="_blank" class="btn">Say hello</a> <a href="https://github.com/dogecash" target="_blank" class="btn btn-inverse">Github</a> </div>
                 </section>
 
                 <!-- Prefooter -->
@@ -303,5 +314,24 @@
 <script src="js/jquery.sticky.js"></script> 
 <script src="js/jquery.magnific-popup.min.js"></script> 
 <script src="js/main.js"></script> 
+<script>
+    $(document).ready(function($) {
+
+/*-----------------------------------------------------------------------------------*/
+/* 	Counter Timer
+/*-----------------------------------------------------------------------------------*/
+$('.countdown-all').downCount({
+     date: '<?php echo $handler->dogecData()['future_date']; ?> 12:00:00' // M/D/Y
+});
+/*-----------------------------------------------------------------------------------*/
+/* 	COUNTER
+/*-----------------------------------------------------------------------------------*/
+$('.counter').counterUp({
+    delay: 50,
+    time: 2000
+});
+
+});
+</script>
 </body>
 </html>
