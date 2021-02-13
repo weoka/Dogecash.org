@@ -1,6 +1,6 @@
 <?php
 
-namespace inc;
+namespace Inc;
 
 if(!function_exists('start')) :
     header('Status: 403 Forbidden');
@@ -10,7 +10,7 @@ endif;
 
 use GuzzleHttp;
 
-class CoinmarketcapApi
+class CoinmarketcapAPI
 {
     function __construct($apikey) {
         $this->apikey = $apikey;
