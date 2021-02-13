@@ -922,6 +922,7 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 	width: 100%;
 	background: url(../images/background.jpg);
 	background-size: cover;
+    height:100%;
 }
 .simple-head {
 	background-size: cover;
@@ -1248,10 +1249,12 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 			Prefooter
 ========================================================*/
 .community-sec {
-	background: url(../images/com-bg.jpg) top center no-repeat;
+	background: url(../images/background.jpg) top center no-repeat;
 	background-size: cover;
 	z-index: 1;
+    text-align: center;
 }
+
 .community-sec:before {
 	position: absolute;
 	content: "";
