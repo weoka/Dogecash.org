@@ -119,15 +119,15 @@ img {
 	z-index: 1;
 }
 .btn:hover {
-	background: #0b0c22;
+	background: #362417;
 	color: #fff;
 }
 .btn-inverse {
 	background: #ffe115;
-	color: #0b0c22;
+	color: #362417;
 }
 .btn-inverse:hover {
-	background: #0b0c22;
+	background: #362417;
 	color: #fff;
 }
 .btn-white {
@@ -174,11 +174,11 @@ img {
 .btn-round {
 	background: none;
 	border-radius: 50px;
-	border: 1px solid #2d3a4b;
-	color: #2d3a4b;
+	border: 1px solid #362417;
+	color: #362417;
 }
 .btn-round:hover {
-	background: #2d3a4b;
+	background: #362417;
 	color: #fff;
 }
 .parallax-bg {
@@ -242,7 +242,7 @@ section {
 }
 .heading h4 {
 	font-weight: 500;
-	color: #2d3a4b;
+	color: #362417;
 	margin: 0px;
 	font-size: 26px;
 	letter-spacing: -1px;
@@ -451,7 +451,7 @@ header .navbar li.active a:before {
 	position: relative;
 }
 .ownmenu .nav .dropdown-menu li a:before {
-	background: #2d3a4b;
+	background: #362417;
 	content: "";
 	width: 0px;
 	height: 100%;
@@ -470,7 +470,7 @@ header .navbar li.active a:before {
 	line-height: 30px;
 	background: none;
 	text-transform: none;
-	color: #2d3a4b !important;
+	color: #362417 !important;
 }
 .ownmenu .nav .dropdown-menu li:nth-last-child(1) a {
 	border-bottom: none;
@@ -517,7 +517,7 @@ header .navbar li.active a:before {
 }
 .ownmenu .dropdown.megamenu .dropdown-menu h6 {
 	margin-bottom: 20px;
-	color: #2d3a4b;
+	color: #362417;
 	font-size: 14px;
 	font-weight: normal;
 }
@@ -532,7 +532,7 @@ header .navbar li.active a:before {
 .ownmenu .dropdown.megamenu .dropdown-menu h5 {
 	margin-bottom: 20px;
 	letter-spacing: 1px;
-	color: #2d3a4b;
+	color: #362417;
 }
 .ownmenu .dropdown.megamenu .dropdown-menu h5 span {
 	font-size: 14px;
@@ -546,7 +546,7 @@ header .navbar li.active a:before {
 	width: 100%;
 	font-size: 12px;
 	padding: 0px 0px;
-	color: #2d3a4b !important;
+	color: #362417 !important;
 	margin: 0px;
 }
 .ownmenu .dropdown .media-left {
@@ -592,7 +592,7 @@ header .navbar li.active a:before {
 }
 .ownmenu .dropdown.megamenu .dropdown-menu {
 	overflow: hidden;
-	border-top: 1px solid #2d3a4b;
+	border-top: 1px solid #362417;
 	margin: 0px;
 }
 .ownmenu .dropdown.megamenu .dropdown-menu .row {
@@ -656,7 +656,7 @@ header .is-sticky .sticky .nav .dropdown.megamenu .dropdown-menu {
 	margin: 0px;
 }
 .nav-right .navbar-right li a {
-	border: 1px solid #2d3a4b;
+	border: 1px solid #362417;
 	border-radius: 50%;
 	height: 36px;
 	width: 36px;
@@ -668,7 +668,7 @@ header .is-sticky .sticky .nav .dropdown.megamenu .dropdown-menu {
 }
 .nav-right .navbar-right li a:hover {
 	color: #fff;
-	background: #2d3a4b;
+	background: #362417;
 }
 .nav-right {
 	float: right;
@@ -887,7 +887,7 @@ header .user-basket .btn {
 }
 header .user-basket .btn:hover {
 	background: #ffe115;
-	color: #2d3a4b;
+	color: #362417;
 }
 header .user-basket .media-heading {
 	margin-top: 0px;
@@ -920,7 +920,7 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 ========================================================*/
 #particles-js {
 	width: 100%;
-	background: #362417;
+	background: url(../images/background.jpg);
 	background-size: cover;
 }
 .simple-head {
@@ -1084,7 +1084,7 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 	text-align: left;
 }
 .distri.drk {
-	background: #0b0c22;
+	background: #362417;
 	background-size: cover;
 }
 .distri.drk .progress {
@@ -1111,8 +1111,62 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 	background: rgba(255,255,255,0.05);
 }
 .distri.drk .progress span {
-	color: #0b0c22;
+	color: #362417;
 }
 .distri.drk .progress-bar {
 	background: #ffe115;
+}
+
+/*=======================================================
+			First section
+========================================================*/
+.first-section .btn {
+	margin-top: 30px;
+}
+.first-section .ib-icon {
+	margin: 30px 0;
+	margin-bottom: 20px;
+}
+.first-section .ib-icon i {
+	font-size: 40px;
+	color: #362417;
+}
+.first-section .vid-btn {
+	margin-top: 15px;
+	font-weight: 500;
+	display: inline-block;
+}
+.first-section .vid-btn span {
+	font-size: 12px;
+}
+.first-section .vid-btn i {
+	float: left;
+	height: 40px;
+	width: 40px;
+	border-radius: 50px;
+	line-height: 40px;
+	border: 1px solid rgba(0,0,0,0.9);
+	text-align: center;
+	margin-right: 10px;
+}
+.icon-box p {
+	font-size: 12px;
+	line-height: 24px;
+}
+.icon-box .h6 {
+	letter-spacing: -0.5px;
+	font-size: 16px;
+	margin: 18px 0px;
+	font-weight: 600;
+}
+.ib-style-3 .h6 {
+	font-size: 14px;
+}
+.light-bg {
+	background: #f5f5f5 !important;
+}
+
+.first-section .row{
+    display: flex;
+    align-items: center;
 }
