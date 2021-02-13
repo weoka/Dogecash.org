@@ -10,7 +10,7 @@ endif;
 
 require __DIR__ . '/../vendor/autoload.php';
 
-use Inc\CoinmarketcapApi;
+use Inc\CoinmarketcapAPI;
 
 class Handler
 {
