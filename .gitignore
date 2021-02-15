@@ -68,3 +68,6 @@ config.php
 #ignore vendor
 /vendor
 composer.lock
+
+#Ignore .env file
+.env

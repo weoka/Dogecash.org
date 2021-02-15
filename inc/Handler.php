@@ -10,13 +10,19 @@ endif;
 
 require __DIR__ . '/../vendor/autoload.php';
 
+
 use Inc\CoinmarketcapAPI;
+use Dotenv;
 
 class Handler
 {
     function __construct() {
-        //api key as constructor parameter
-        $coinmarkectapApi = new CoinmarketcapApi('API KEY HERE');
+        //load enviroment variable
+        $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../');
+        $dotenv->load();
+
+        //load coinmarketcap api
+        $coinmarkectapApi = new CoinmarketcapApi($_ENV['CMC_APIKEY']);
         $this->dogec_response = $coinmarkectapApi->requestCryptoQuotes('dogecash');
         $this->doge_response = $coinmarkectapApi->requestCryptoQuotes('dogecoin');
     }
