@@ -12,10 +12,17 @@ use GuzzleHttp;
 
 class CoinmarketcapAPI
 {
-    function __construct($apikey) {
+    function __construct($apikey, $type) {
         $this->apikey = $apikey;
         $this->client = new GuzzleHttp\Client();
-        $this->cmc_uri = 'https://pro-api.coinmarketcap.com/v1/';
+        if($type == "sandbox")
+        {
+            $this->cmc_uri = 'https://sandbox-api.coinmarketcap.com/v1/';
+        }
+        else
+        {
+            $this->cmc_uri = 'https://pro-api.coinmarketcap.com/v1/';
+        }
     }
 
     public function requestCryptoQuotes($crypto){

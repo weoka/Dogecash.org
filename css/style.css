@@ -1322,18 +1322,13 @@ footer p {
 	font-size: 12px;
 	font-weight: 500;
 }
-footer .rights a {
+footer a {
 	color: #999;
 	font-size: 12px;
 	font-weight: 500;
 	margin-left: 15px;
 }
-footer .rights {
-	border-top: 1px solid rgba(255,255,255,0.1);
-	padding-top: 15px;
-	background: rgba(0,0,0,0.1);
-}
-footer .rights a:hover {
+footer a:hover {
 	color: #fff;
 }
 

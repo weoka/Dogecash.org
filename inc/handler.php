@@ -22,7 +22,8 @@ class Handler
         $dotenv->load();
 
         //load coinmarketcap api
-        $coinmarkectapApi = new CoinmarketcapApi($_ENV['CMC_APIKEY']);
+        $coinmarketcapkey = $_ENV['COINMARKETCAP_MODE'] == 'sandbox' ? $_ENV['CMC_SANDBOX_APIKEY'] : $_ENV['CMC_PRODUCTION_APIKEY'];
+        $coinmarkectapApi = new CoinmarketcapApi($coinmarketcapkey, $_ENV['COINMARKETCAP_MODE']);
         $this->dogec_response = $coinmarkectapApi->requestCryptoQuotes('dogecash');
         $this->doge_response = $coinmarkectapApi->requestCryptoQuotes('dogecoin');
     }
