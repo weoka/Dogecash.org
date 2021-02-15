@@ -42,7 +42,6 @@ $handler = start();
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="nav">
                     <li class="scroll active"><a href="#">Home</a></li>
-                    <li class="scroll"> <a href="#about">About </a> </li>
                     <li class="scroll"> <a href="https://github.com/dogecash/dogecash/releases" target="_blank">Wallet </a> </li>
                     <li class="scroll"> <a href="https://coinmarketcap.com/" target="_blank">Coinmarketcap </a> </li>
                     <li class="scroll"> <a href="https://discord.gg/U8wfSKJkUa" target="_blank">Discord </a> </li>
