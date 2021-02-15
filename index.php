@@ -17,6 +17,7 @@ $handler = start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DogeCash - The Doge cryptocurrency that will reach $1</title>
+    <meta name="description" content="DogeCash is an eco-friendly and community-governed doge cryptocurrency designed to be a store of value.">
     <link rel="icon" type="image/png" href="/images/favicon.png">
 
     <!-- Stylesheets -->
@@ -43,10 +44,11 @@ $handler = start();
                     <li class="scroll active"><a href="#">Home</a></li>
                     <li class="scroll"> <a href="#about">About </a> </li>
                     <li class="scroll"> <a href="https://github.com/dogecash/dogecash/releases" target="_blank">Wallet </a> </li>
+                    <li class="scroll"> <a href="https://coinmarketcap.com/" target="_blank">Coinmarketcap </a> </li>
                     <li class="scroll"> <a href="https://discord.gg/U8wfSKJkUa" target="_blank">Discord </a> </li>
                     <li class="scroll"> <a href="https://t.me/dogecashcoin" target="_blank">Telegram </a> </li>
                     <li class="scroll"> <a href="https://www.patreon.com/DogeCash" target="_blank">Patreon </a> </li>
-                    <li class="scroll"> <a href="/community/">Community</a> </li>
+                    <li class="scroll"> <a href="https://community.dogecash.org/">Community</a> </li>
                     </ul>
                 </div>
                 </nav>
@@ -301,6 +303,9 @@ $handler = start();
                 <div class="col">
                     <p>Dogecash.org is NOT the official site of the DogeCash project</p>
                 </div>
+                <div class="col text-right">
+                <a href="https://dogec.io/" target="_blank">Official DogeCash website </a>
+                <a href="https://github.com/weoka/Dogecash.org" target="_blank">This site has his own repository. You can suggest any change you want </a>  </div>
                 </div>
             </div>
         </footer>

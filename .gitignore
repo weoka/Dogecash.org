@@ -67,3 +67,4 @@ config.php
 
 #ignore vendor
 /vendor
+composer.lock
