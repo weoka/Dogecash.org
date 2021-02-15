@@ -305,7 +305,7 @@ $handler = start();
                 </div>
                 <div class="col text-right">
                 <a href="https://dogec.io/" target="_blank">Official DogeCash website </a>
-                <a href="https://github.com/weoka/Dogecash.org" target="_blank">This site has his own repository. You can suggest any change you want here </a>  </div>
+                <a href="https://github.com/weoka/Dogecash.org" target="_blank">This site has his own repository. You can change anything from here</a>  </div>
                 </div>
             </div>
         </footer>

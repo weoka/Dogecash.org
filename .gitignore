@@ -71,3 +71,4 @@ composer.lock
 
 #Ignore .env file
 .env
+!.env.example
