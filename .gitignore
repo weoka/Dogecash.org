@@ -71,3 +71,6 @@ config.php
 #Ignore .env file
 .env
 !.env.example
+
+#Storage
+/storage
