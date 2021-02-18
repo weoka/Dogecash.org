@@ -26,5 +26,7 @@ Once you have your .env, open it with any code editor and fill the fields that y
     #API KEY HERE
     CMC_PRODUCTION_APIKEY=YOUR_APIKEY_HERE
     CMC_SANDBOX_APIKEY=f7e2fc24-bef7-4f3b-bb79-657679b4a81a
+    #UPDATE RATE, IN MINUTES (DEFAULT IS 15)
+    UPDATE_TIME=15
 
 Enjoy!
