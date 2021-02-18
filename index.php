@@ -65,7 +65,7 @@ $handler = start();
                     <!-- Left Section -->
                     <div class="col-md-7">
                         <h1>The eco-friendly Doge cryptocurrency that will reach $1</h1>
-                        <a href="#valuable" class="btn">Learn more</a> <a href="https://stakecube.net/app/exchange_v3/dogec_btc" target="_blank" class="btn btn-inverse">Buy now</a> </div>
+                        <a href="#valuable" class="btn">Learn more</a> <a href="https://stakecube.net/app/exchange/dogec_btc" target="_blank" class="btn btn-inverse">Buy now</a> </div>
                     
                     <!-- Text Section -->
                     <div class="col-md-5">
@@ -222,7 +222,7 @@ $handler = start();
                                 </article>
                             </li>
                             </ul>
-                            <a href="https://discord.gg/U8wfSKJkUa" target="_blank" class="btn">Say hello</a> <a href="https://stakecube.net/app/exchange_v3/dogec_btc" target="_blank" class="btn btn-inverse">Buy Now</a> 
+                            <a href="https://discord.gg/U8wfSKJkUa" target="_blank" class="btn">Say hello</a> <a href="https://stakecube.net/app/exchange/dogec_btc" target="_blank" class="btn btn-inverse">Buy Now</a> 
                             
                         </div>
                         </div>
@@ -245,7 +245,7 @@ $handler = start();
                                 <p>Masternodes</p>
                             </li>
                             </ul>
-                            <a href="https://www.dogec.io/whitepaper.pdf" target="_blank" class="btn">White Paper</a> <a href="https://stakecube.net/app/exchange_v3/dogec_btc" target="_blank" class="btn btn-inverse">Buy your masternode</a> </div>
+                            <a href="https://www.dogec.io/whitepaper.pdf" target="_blank" class="btn">White Paper</a> <a href="https://stakecube.net/app/exchange/dogec_btc" target="_blank" class="btn btn-inverse">Buy your masternode</a> </div>
                         </div>
                     </div>
                 </section>
