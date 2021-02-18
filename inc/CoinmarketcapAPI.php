@@ -11,6 +11,7 @@ endif;
 use GuzzleHttp;
 use DateTime;
 use DateInterval;
+use DateTimeZone;
 
 class CoinmarketcapAPI
 {
@@ -33,9 +34,10 @@ class CoinmarketcapAPI
             $request = file_get_contents(__DIR__ . "/../storage/$crypto.json");
             $decoded = json_decode($request, true);
             $filedate = new DateTime($decoded['status']['timestamp']);
+            $currentTime = new DateTime("now", new DateTimeZone('UTC') );
 
             //check if file is older than required
-            if($filedate->format('Y-m-d H:i:s') > date('Y-m-d H:i:s', strtotime("-$update_time minutes")))
+            if($filedate > $currentTime->sub(new DateInterval('PT'.$update_time.'M')))
             {
                 return $decoded;
             }
