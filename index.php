@@ -47,7 +47,6 @@ $handler = start();
                     <li class="scroll"> <a href="https://discord.gg/U8wfSKJkUa" target="_blank">Discord </a> </li>
                     <li class="scroll"> <a href="https://t.me/dogecashcoin" target="_blank">Telegram </a> </li>
                     <li class="scroll"> <a href="https://www.patreon.com/DogeCash" target="_blank">Patreon </a> </li>
-                    <li class="scroll"> <a href="https://community.dogecash.org/">Community</a> </li>
                     </ul>
                 </div>
                 </nav>
