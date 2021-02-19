@@ -12,7 +12,10 @@ require __DIR__ . '/../vendor/autoload.php';
 
 
 use Inc\CoinmarketcapAPI;
+use Inc\GithubAPI;
 use Dotenv;
+use DateTime;
+use DateTimeZone;
 
 class Handler
 {
@@ -74,6 +77,32 @@ class Handler
             'market_cap' => number_format($market_cap, 0, '.', ','),
             'volume' => number_format($volume, 0, '.', ',')
         ];
-        
+    }
+
+    public function lastActivity($project)
+    {
+        $github = new GithubAPI();
+        $response = $github->requestActivity($project)[0]['created_at'];
+
+        $lastActivity = new DateTime($response, new DateTimeZone('CET'));
+        $currentTime = new DateTime("now", new DateTimeZone('CET') );
+
+        $diff = $currentTime->diff($lastActivity);
+        $days = $diff->days;
+        $hours = $diff->h;
+        $totalhours = $hours + ($days * 24);
+
+        if($totalhours > 24)
+        {
+            return [
+                "number" => $days,
+                "string" => $days > 1 ? "days" : "day"
+            ];            
+        }
+
+        return [
+            "number" => $hours,
+            "string" => $hours > 1 ? "hours" : "hour"
+        ];   
     }
 }

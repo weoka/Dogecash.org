@@ -258,8 +258,8 @@ $handler = start();
                         <p>DogeCash has been kicking around since 2018 with a dedicated team and a strong community base.</p>
                     </div>
                     <ul class="row margin-top-50 margin-bottom-50">
-                        <li class="col"> <i class="fab fa-github"></i> <span><span class="counter">4</span> hrs Ago</span>
-                        <p>Since last Commit</p>
+                        <li class="col"> <i class="fab fa-github"></i> <span><span class="counter"><?php $githubActivity = $handler->lastActivity('dogecash'); echo $githubActivity['number']; ?></span> <?php echo $githubActivity['string']; ?> </span>
+                        <p>Since last Github activity</p>
                         </li>
                         <li class="col"><i class="fab fa-discord"></i>  <span><span class="counter">1800</span>+</span>
                         <p>Discord members</p>
@@ -304,7 +304,7 @@ $handler = start();
                 </div>
                 <div class="col text-right">
                 <a href="https://dogec.io/" target="_blank">Official DogeCash website </a>
-                <a href="https://github.com/weoka/Dogecash.org" target="_blank">This site has his own repository. You can change anything from here</a>  </div>
+                <a href="https://github.com/weoka/Dogecash.org" target="_blank">This site has its own repository. You can change anything from here</a>  </div>
                 </div>
             </div>
         </footer>
