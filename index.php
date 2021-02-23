@@ -27,6 +27,7 @@ $handler = start();
     <link href="css/responsive.css" rel="stylesheet">
     <link href="fonts/flaticon.css" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800" rel="stylesheet">
 
     <!-- JavaScripts -->
     <script src="js/modernizr.js"></script>
